@@ -6,8 +6,8 @@ const Experience = () => {
   return (
     <div className="experience" id="experience">
       <h1>EXPERIENCE</h1>
-      {experience.map((item) => (
-        <div>
+      {experience.map((item, index) => (
+        <div key={index}>
           <h2>{item.title}</h2>
           <h2>{item.field}</h2>
           <h4>{item.date}</h4>
