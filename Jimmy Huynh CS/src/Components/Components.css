@@ -1,0 +1,28 @@
+/* HERO CSS */
+
+.about {
+  text-align: left;
+  height: 100vh; /*takes up entire screen height */
+}
+
+/* FOOTER CSS */
+
+/* HEADER CSS */
+.button:hover {
+  color: goldenrod;
+  /* background-color: black; */
+}
+
+/* PROJECT CSS */
+.project {
+  text-align: left;
+  padding-top: 10vh;
+  height: 100vh; /*takes up entire screen height */
+}
+
+/* EXPERIENCE CSS */
+.experience {
+  text-align: left;
+  padding-top: 5vh;
+  height: 100vh; /*takes up entire screen height */
+}

@@ -1,11 +1,26 @@
 import "./App.css";
+import Contact from "./Components/Contact";
+import Experience from "./Components/Experience";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Hero from "./Components/Hero";
+import Projects from "./Components/Projects";
+import "@fontsource/roboto/500.css";
+import Divider from "@mui/material/Divider";
 
 function App() {
   return (
-    <>
-      <h1>Jimmy Huynh</h1>
-      <p>Coming Soon...</p>
-    </>
+    <div>
+      <Header />
+      <Hero />
+      <Divider sx={{ color: "goldenrod" }} />
+      <Projects />
+      <Divider sx={{ color: "goldenrod" }} />
+      <Experience />
+      <Divider sx={{ color: "goldenrod" }} />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
