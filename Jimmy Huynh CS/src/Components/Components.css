@@ -33,17 +33,17 @@
 } */
 
 /* EXPERIENCE CSS */
-.experience .project .about {
+.experience .project .about .footer {
   text-align: left;
   padding-top: 5vh;
   height: 100vh; /*takes up entire screen height */
 }
 
-.footer {
-  padding-top: -5vh;
+/* .footer {
+  padding-top: 5vh;
   padding-bottom: -5vh;
   text-align: center;
-}
+} */
 
 .contact {
   padding: auto;
@@ -59,7 +59,7 @@
 }
 
 .socialmedia {
-  padding-top: 50vh;
+  padding-top: 30vh;
 }
 
 .card {
@@ -71,16 +71,27 @@
   border-radius: 2%;
 }
 
+.header2 {
+  padding-top: 20vh;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
 /* Changes the CSS of components when the width of screen is < 1000px */
 @media screen and (max-width: 1000px) {
-  .experience .project .about {
+  .experience .project .about .footer {
     height: 50vh; /*takes up entire screen height */
+    padding-top: 1vh;
   }
   .socialmedia {
-    padding-top: 0vh;
+    padding-top: 1vh;
   }
 
   .contact {
     height: 50vh; /*takes up entire screen height */
+  }
+  .header2 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
 }

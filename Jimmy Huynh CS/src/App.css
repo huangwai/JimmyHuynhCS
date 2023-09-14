@@ -37,6 +37,7 @@
 #left {
   flex: 0 0 40%;
   padding-right: 10vw;
+
   position: sticky;
   align-items: center;
   top: 0;
@@ -63,13 +64,14 @@
 
 #right {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 1000px) {
   #wrapper {
     flex-wrap: wrap;
+    padding: 5vw;
   }
   #left {
     flex: 0 0 100%; /* Occupy 100% width when the screen is narrow */
@@ -82,6 +84,7 @@
   #right {
     flex: 0 0 100%; /* Occupy 100% width when the screen is narrow */
     order: 2;
+    overflow-x: hidden; /* Allow content to scroll when it exceeds the height */
   }
 
   #left-content {

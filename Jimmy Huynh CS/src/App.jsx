@@ -9,14 +9,16 @@ import Projects from "./Components/Projects";
 import "@fontsource/roboto/500.css";
 import Divider from "@mui/material/Divider";
 import SocialMedia from "./Components/SocialMedia";
+import Header2 from "./Components/Header2";
 
 function App() {
   return (
     <div id="wrapper">
-      <Header />
+      {/* <Header /> */}
       <div id="left">
         <div id="left-content">
           <Hero />
+          <Header2 />
           <SocialMedia />
         </div>
       </div>

@@ -20,6 +20,7 @@ import Slide from "@mui/material/Slide";
 import "../Components/Components.css";
 
 const drawerWidth = window.innerWidth;
+console.log(`Current screen width: ${drawerWidth}px`);
 const navItems = [
   { id: "01", name: "about" },
   { id: "02", name: "experience" },
@@ -59,27 +60,27 @@ function DrawerAppBar(props) {
     setMobileOpen((prevState) => !prevState);
   };
 
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Jimmy Huynh
-      </Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item.name} disablePadding>
-            <ListItemButton
-              className="button"
-              href={`#${item.name}`}
-              sx={{ textAlign: "center" }}
-            >
-              <ListItemText primary={item.name} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+  // const drawer = (
+  //   <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+  //     <Typography variant="h6" sx={{ my: 2 }}>
+  //       Jimmy Huynh
+  //     </Typography>
+  //     <Divider />
+  //     <List>
+  //       {navItems.map((item) => (
+  //         <ListItem key={item.name} disablePadding>
+  //           <ListItemButton
+  //             className="button"
+  //             href={`#${item.name}`}
+  //             sx={{ textAlign: "center" }}
+  //           >
+  //             <ListItemText primary={item.name} />
+  //           </ListItemButton>
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //   </Box>
+  // );
   const handleDownload = () => {
     const pdfPath = "../../HuynhJimmy_Resume.pdf";
 
@@ -104,15 +105,15 @@ function DrawerAppBar(props) {
           sx={{ color: "inherit", backgroundColor: "inherit" }}
         >
           <Toolbar>
-            <IconButton
+            {/* <IconButton
               color="inherit"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
               sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
+            > */}
+            {/* <MenuIcon /> */}
+            {/* </IconButton> */}
             <Typography
               href={"/"}
               variant="h6"
@@ -143,7 +144,7 @@ function DrawerAppBar(props) {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <nav>
+      {/* <nav>
         <Drawer
           container={container}
           variant="temporary"
@@ -162,7 +163,7 @@ function DrawerAppBar(props) {
         >
           {drawer}
         </Drawer>
-      </nav>
+      </nav> */}
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
       </Box>
