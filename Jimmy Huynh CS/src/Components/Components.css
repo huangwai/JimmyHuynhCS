@@ -1,9 +1,9 @@
 /* HERO CSS */
 
-.about {
+/* .about {
   text-align: left;
-  height: 100vh; /*takes up entire screen height */
-}
+  height: 100vh;
+} */
 
 /* FOOTER CSS */
 
@@ -26,16 +26,16 @@
 } */
 
 /* PROJECT CSS */
-.project {
+/* .project {
   text-align: left;
   padding-top: 10vh;
   height: 100vh;
-}
+} */
 
 /* EXPERIENCE CSS */
-.experience {
+.experience .project .about {
   text-align: left;
-  padding-top: 10vh;
+  padding-top: 5vh;
   height: 100vh; /*takes up entire screen height */
 }
 
@@ -48,4 +48,39 @@
 .contact {
   padding: auto;
   height: 100vh; /*takes up entire screen height */
+}
+
+.socialButtons {
+  color: white;
+}
+
+.socialButtons:hover {
+  color: goldenrod;
+}
+
+.socialmedia {
+  padding-top: 50vh;
+}
+
+.card {
+  padding-top: 2vh;
+}
+
+.card:hover {
+  background-color: rgba(218, 165, 32, 0.1);
+  border-radius: 2%;
+}
+
+/* Changes the CSS of components when the width of screen is < 1000px */
+@media screen and (max-width: 1000px) {
+  .experience .project .about {
+    height: 50vh; /*takes up entire screen height */
+  }
+  .socialmedia {
+    padding-top: 0vh;
+  }
+
+  .contact {
+    height: 50vh; /*takes up entire screen height */
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import experience from "../assets/ExperienceArr";
-import { Button } from "@mui/material";
+import { Button, CardActionArea } from "@mui/material";
 import "../Components/Components.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -15,27 +15,23 @@ const Experience = () => {
       {experience.map((item, index) => (
         <div key={index}>
           <Card
+            className="card"
             sx={{ minWidth: 275, backgroundColor: "inherit", color: "white" }}
           >
+            {/* <CardActionArea> */}
             <CardContent>
-              <h2>{item.title}</h2>
+              <h3>{item.company}</h3>
+              <h3>{item.title}</h3>
               <h4>{item.date}</h4>
-              <h2>{item.field}</h2>
+              <h3>{item.field}</h3>
               <p style={{ color: "grey" }}>{item.desc}</p>
-              <Button sx={{ border: 1, color: "goldenrod" }}>
+              <Button sx={{ border: 1, color: "goldenrod", cursor: "default" }}>
                 {item.skills}
               </Button>
             </CardContent>
+            {/* </CardActionArea> */}
           </Card>
         </div>
-        // <div key={index}>
-
-        //   <h2>{item.title}</h2>
-        //   <h2>{item.field}</h2>
-        //   <h4>{item.date}</h4>
-        //   <p>{item.desc}</p>
-        //   <Button>{item.skills}</Button>
-        // </div>
       ))}
     </div>
   );

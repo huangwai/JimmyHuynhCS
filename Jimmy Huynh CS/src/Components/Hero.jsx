@@ -8,8 +8,7 @@ const Hero = () => {
       <h2>I love developing applications</h2>
       <p>
         I'm a software developer who enjoys creating web applications for looks
-        and usability. Currently, I specialize in creating full-stack
-        applications using frameworks React.js, Node.js, MySQL, and Express.js.
+        and usability.
       </p>
     </div>
   );

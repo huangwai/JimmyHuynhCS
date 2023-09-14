@@ -16,12 +16,13 @@ const Projects = () => {
       {projects.map((item, index) => (
         <div key={index}>
           <Card
+            className="card"
             sx={{ minWidth: 275, backgroundColor: "inherit", color: "white" }}
           >
             <CardContent>
-              <h2>{item.title}</h2>
+              <h3>{item.title}</h3>
               <p style={{ color: "grey" }}>{item.desc}</p>
-              <Button sx={{ border: 1, color: "goldenrod" }}>
+              <Button sx={{ border: 1, color: "goldenrod", cursor: "default" }}>
                 {item.skills}
               </Button>
             </CardContent>
