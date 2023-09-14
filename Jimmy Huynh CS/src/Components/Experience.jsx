@@ -5,7 +5,7 @@ import "../Components/Components.css";
 const Experience = () => {
   return (
     <div className="experience" id="experience">
-      <h1>EXPERIENCE</h1>
+      {/* <h1>EXPERIENCE</h1> */}
       {experience.map((item, index) => (
         <div key={index}>
           <h2>{item.title}</h2>

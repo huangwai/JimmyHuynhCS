@@ -19,7 +19,7 @@ import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
 import "../Components/Components.css";
 
-const drawerWidth = window.innerWidth - 10;
+const drawerWidth = window.innerWidth;
 const navItems = [
   { id: "01", name: "about" },
   { id: "02", name: "experience" },
@@ -68,7 +68,11 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton
+              className="button"
+              href={`#${item.name}`}
+              sx={{ textAlign: "center" }}
+            >
               <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>

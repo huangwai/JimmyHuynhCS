@@ -10,16 +10,23 @@ import Divider from "@mui/material/Divider";
 
 function App() {
   return (
-    <div>
+    <div id="wrapper">
       <Header />
-      <Hero />
-      <Divider sx={{ color: "goldenrod" }} />
-      <Projects />
-      <Divider sx={{ color: "goldenrod" }} />
-      <Experience />
-      <Divider sx={{ color: "goldenrod" }} />
-      <Contact />
-      <Footer />
+      <div id="left">
+        <div id="left-content">
+          <Hero />
+        </div>
+      </div>
+
+      <div id="right">
+        <Divider sx={{ color: "goldenrod" }} />
+        <Projects />
+        <Divider sx={{ color: "goldenrod" }} />
+        <Experience />
+        <Divider sx={{ color: "goldenrod" }} />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -25,6 +25,62 @@
     background-position: 0% 50%;
   }
 }
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+}
+
+#left {
+  flex: 0 0 40%;
+
+  /* order: 1; */
+}
+
+#left-content {
+  /* Set a fixed height for the content inside the left div */
+  height: 100vh; /* Adjust the height as needed */
+
+  /* Make the content stay fixed when scrolling */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* Maintain the same width as the left div */
+  /* overflow-y: hidden; */
+  /* Allow content to scroll when it exceeds the height */
+}
+
+#right {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 570px) {
+  #left {
+    flex: 0 0 100%; /* Occupy 100% width when the screen is narrow */
+    order: 1; /* Change the order to 1 to stack it above the right div */
+  }
+
+  #right {
+    flex: 0 0 100%; /* Occupy 100% width when the screen is narrow */
+    order: 2;
+  }
+
+  #left-content {
+    /* Set a fixed height for the content inside the left div */
+    height: 100%; /* You can adjust the height as needed */
+    /* Add overflow-y: hidden to hide vertical scrollbar in the left div content */
+    overflow-y: hidden; /* Allow content to scroll when it exceeds the height */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
 /* #body {
   max-width: auto;
   background-color: #1d1d20;
