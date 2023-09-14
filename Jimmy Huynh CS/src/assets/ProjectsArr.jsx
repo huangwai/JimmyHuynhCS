@@ -23,7 +23,7 @@ const projectArr = [
   {
     //field: value
     title: "PixByHuynh Photography Website",
-    link: "https://github.com/huangwai/pixbyhuynh",
+    link: "https://pixbyhuynh.vercel.app/",
     desc: "Leveraged my knowledge in front-end development and utilized essential frameworks to create a website that seamlessly displays my eye-catching photography. Implemented 10 fully animated photo albums that provides a quality experience for the end-user. Incorporated Vercel analytics to study user traffic and engagement statistics.",
     skills: ["HTML ", "React.js ", "Email.js ", "Material UI/CSS "],
   },

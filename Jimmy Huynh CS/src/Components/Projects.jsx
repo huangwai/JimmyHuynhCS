@@ -2,7 +2,6 @@ import React from "react";
 import projects from "../assets/ProjectsArr";
 import "../Components/Components.css";
 import { Button } from "@mui/material";
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -11,7 +10,9 @@ import Typography from "@mui/material/Typography";
 const Projects = () => {
   return (
     <div className="projects" id="projects">
-      {/* <h2>Projects</h2> */}
+      <Typography sx={{ fontSize: 14 }} color="white" gutterBottom>
+        PROJECTS
+      </Typography>
       {projects.map((item, index) => (
         <div key={index}>
           <Card

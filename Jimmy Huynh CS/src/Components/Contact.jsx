@@ -84,7 +84,7 @@ const StyledContactForm = styled.div`
       width: 100%;
       max-height: 100px;
       min-height: 100px;
-      padding: 7px;
+      padding: 100px;
       outline: none;
       border-radius: 5px;
       border: 1px solid #fff;

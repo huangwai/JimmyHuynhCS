@@ -28,12 +28,19 @@
 
 #wrapper {
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 5vh;
+  /* flex-wrap: wrap; */
+  padding: 5vh;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #left {
   flex: 0 0 40%;
+  position: sticky;
+  align-items: center;
+  top: 0;
+
+  padding-top: 10vh;
 
   /* order: 1; */
 }
@@ -60,9 +67,13 @@
 
 /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 570px) {
+  #wrapper {
+    flex-wrap: wrap;
+  }
   #left {
     flex: 0 0 100%; /* Occupy 100% width when the screen is narrow */
     order: 1; /* Change the order to 1 to stack it above the right div */
+    position: relative;
   }
 
   #right {

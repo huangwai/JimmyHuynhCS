@@ -19,11 +19,11 @@ function App() {
       </div>
 
       <div id="right">
-        <Divider sx={{ color: "goldenrod" }} />
-        <Projects />
-        <Divider sx={{ color: "goldenrod" }} />
+        {/* <Divider sx={{ color: "goldenrod" }} /> */}
         <Experience />
-        <Divider sx={{ color: "goldenrod" }} />
+        {/* <Divider sx={{ color: "goldenrod" }} /> */}
+        <Projects />
+        {/* <Divider sx={{ color: "goldenrod" }} /> */}
         <Contact />
         <Footer />
       </div>
