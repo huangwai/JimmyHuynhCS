@@ -40,7 +40,7 @@ export const ContactForm = () => {
       }}
     >
       <StyledContactForm>
-        <h1>Contact Us</h1>
+        <h1>Contact</h1>
         <br></br>
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
@@ -64,7 +64,7 @@ const StyledContactForm = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     font-size: 16px;
     color: #fff;
     input {
@@ -75,7 +75,7 @@ const StyledContactForm = styled.div`
       border-radius: 5px;
       border: 1px solid #fff;
       &:focus {
-        border: 2px solid goldenrod;
+        border: 3px solid goldenrod;
       }
     }
     textarea {
@@ -84,7 +84,6 @@ const StyledContactForm = styled.div`
       width: 100%;
       max-height: 100px;
       min-height: 100px;
-      padding: 100px;
       outline: none;
       border-radius: 5px;
       border: 1px solid #fff;

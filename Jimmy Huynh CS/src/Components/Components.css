@@ -46,7 +46,7 @@
 } */
 
 .contact {
-  padding: auto;
+  /* padding: auto; */
   height: 100vh; /*takes up entire screen height */
 }
 
@@ -59,7 +59,7 @@
 }
 
 .socialmedia {
-  padding-top: 25vh;
+  padding-top: 10vh;
 }
 
 .card {
@@ -68,13 +68,28 @@
 
 .card:hover {
   background-color: rgba(218, 165, 32, 0.1);
+  transition: background-color 0.3s; /* Add a transition effect for the font size */
   border-radius: 2%;
 }
 
 .header2 {
-  padding-top: 10vh;
+  text-align: left;
+  padding-top: 3vh;
   font-size: 20px;
   font-weight: lighter;
+}
+
+.headerList:hover {
+  font-size: 25px;
+  transition: font-size 0.3s; /* Add a transition effect for the font size */
+}
+.headerList {
+  padding-bottom: 2vh;
+  padding-top: 0.2vh;
+}
+
+.hero {
+  /* padding-top: -1vh; */
 }
 
 /* Changes the CSS of components when the width of screen is < 1000px */
@@ -83,15 +98,21 @@
     height: 50vh; /*takes up entire screen height */
     padding-top: 1vh;
   }
+  .footer {
+    text-align: center;
+  }
   .socialmedia {
     padding-top: 1vh;
   }
 
   .contact {
-    height: 50vh; /*takes up entire screen height */
+    height: 100vh; /*takes up entire screen height */
   }
   .header2 {
     padding-top: 5vh;
     padding-bottom: 5vh;
+  }
+  .about {
+    padding-top: 3vh;
   }
 }

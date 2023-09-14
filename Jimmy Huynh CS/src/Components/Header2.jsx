@@ -61,7 +61,11 @@ const Header2 = () => {
       </Box> */}
       <ul>
         {navItems.map((item) => (
-          <li key={item.name} style={{ listStyleType: "none" }}>
+          <li
+            className="headerList"
+            key={item.name}
+            style={{ listStyleType: "none" }}
+          >
             <a
               href={`#${item.name}`}
               className="button"
@@ -74,11 +78,12 @@ const Header2 = () => {
         ))}
         <li
           onClick={handleDownload}
+          className="headerList"
           key="resume"
           style={{ listStyleType: "none" }}
         >
           <a href={"resume"} className="button" style={{ color: "#fff" }}>
-            Resume
+            resume
           </a>
         </li>
       </ul>

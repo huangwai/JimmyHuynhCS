@@ -9,7 +9,7 @@
   background: linear-gradient(120deg, #e87722, #1d1d20, #000000);
   background-size: 180% 180%;
   animation: gradient-animation 9s ease infinite;
-
+  font-family: JetBrain Mono, monospace;
   -webkit-animation: Gradient 9s ease infinite;
   -moz-animation: Gradient 9s ease infinite;
   animation: gradient-animation 9s ease infinite;
@@ -29,7 +29,7 @@
 #wrapper {
   display: flex;
   /* flex-wrap: wrap; */
-  padding: 5vh;
+  padding: 5vw;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -42,7 +42,7 @@
   align-items: center;
   top: 0;
 
-  padding-top: 10vh;
+  /* padding-top: -4vh; */
 
   /* order: 1; */
 }

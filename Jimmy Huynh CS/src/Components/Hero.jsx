@@ -2,7 +2,7 @@ import React from "react";
 import "../Components/Components.css";
 const Hero = () => {
   return (
-    <div className="about" id="about">
+    <div className="hero">
       <p>Hi, my name is </p>
       <h1>Jimmy Huynh</h1>
       <h2>I love developing applications</h2>

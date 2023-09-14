@@ -20,7 +20,7 @@ import Slide from "@mui/material/Slide";
 import "../Components/Components.css";
 
 const drawerWidth = window.innerWidth;
-console.log(`Current screen width: ${drawerWidth}px`);
+// console.log(`Current screen width: ${drawerWidth}px`);
 const navItems = [
   { id: "01", name: "about" },
   { id: "02", name: "experience" },

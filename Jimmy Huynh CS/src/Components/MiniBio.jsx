@@ -1,8 +1,12 @@
 import React from "react";
+import Typography from "@mui/material/Typography";
 
 const MiniBio = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
+      <Typography sx={{ fontSize: 14 }} color="white" gutterBottom>
+        ABOUT
+      </Typography>
       <p>
         {" "}
         I just graduated from Virginia Tech with a B.S in Computer Science. My
