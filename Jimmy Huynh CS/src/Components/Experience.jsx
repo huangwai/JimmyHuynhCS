@@ -24,8 +24,11 @@ const Experience = () => {
               <h3>{item.title}</h3>
               <h4>{item.date}</h4>
               <h3>{item.field}</h3>
-              <p style={{ color: "grey" }}>{item.desc}</p>
-              <Button sx={{ border: 1, color: "goldenrod", cursor: "default" }}>
+              <p style={{ color: "#d1d1d1" }}>{item.desc}</p>
+              <Button
+                className="headerButton"
+                sx={{ color: "goldenrod", cursor: "default" }}
+              >
                 {item.skills}
               </Button>
             </CardContent>

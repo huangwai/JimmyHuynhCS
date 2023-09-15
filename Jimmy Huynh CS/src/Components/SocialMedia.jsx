@@ -12,11 +12,11 @@ const SocialMedia = () => {
         className="socialButtons"
       >
         {" "}
-        <LinkedInIcon style={{ color: "white" }} />
+        <LinkedInIcon className="socialButtons" style={{ color: "white" }} />
       </Button>
       <Button href="https://github.com/huangwai" className="socialButtons">
         {" "}
-        <GitHubIcon style={{ color: "white" }} />
+        <GitHubIcon className="socialButtons" style={{ color: "white" }} />
       </Button>
     </div>
   );

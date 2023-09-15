@@ -19,8 +19,9 @@ export const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message Sent!!!");
-          console.log("Message Sent");
+          window.location.reload();
+          // alert("Message Sent!!!");
+          // console.log("Message Sent");
         },
         (error) => {
           console.log(error.text);

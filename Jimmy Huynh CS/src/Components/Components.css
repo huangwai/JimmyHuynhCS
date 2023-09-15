@@ -1,36 +1,18 @@
-/* HERO CSS */
-
-/* .about {
-  text-align: left;
-  height: 100vh;
-} */
-
-/* FOOTER CSS */
-
 .button {
   background-image: linear-gradient(90deg, orange, grey);
   background-size: 0% 3px;
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: background-size 300ms ease;
+  size: small;
 }
 /* HEADER CSS */
 .button:hover {
   background-size: 100% 3px;
   color: goldenrod;
+  size: medium;
   /* background-color: blue; */
 }
-
-/* .button:active {
-  color: goldenrod;
-} */
-
-/* PROJECT CSS */
-/* .project {
-  text-align: left;
-  padding-top: 10vh;
-  height: 100vh;
-} */
 
 /* EXPERIENCE CSS */
 .experience .project .about .footer {
@@ -38,12 +20,6 @@
   padding-top: 5vh;
   height: 100vh; /*takes up entire screen height */
 }
-
-/* .footer {
-  padding-top: 5vh;
-  padding-bottom: -5vh;
-  text-align: center;
-} */
 
 .contact {
   /* padding: auto; */
@@ -64,12 +40,22 @@
 
 .card {
   padding-top: 2vh;
+  border: 2px solid transparent;
+  transition: border 0.3s ease-in-out;
 }
 
 .card:hover {
-  background-color: rgba(218, 165, 32, 0.1);
+  /* background-color: rgba(218, 165, 32, 0.1);
   transition: background-color 0.3s; /* Add a transition effect for the font size */
-  border-radius: 2%;
+  /* border-radius: 2%; */
+  /* 
+  borderImage: `linear-gradient(to right, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+      borderImageSlice: 1,
+      borderWidth: 2, */
+
+  border-image: linear-gradient(45deg, orange, grey);
+  border-image-slice: 1;
+  border-width: 2;
 }
 
 .header2 {
@@ -79,6 +65,7 @@
   font-weight: lighter;
 }
 
+/* increase size and transition when hovered on */
 .headerList:hover {
   font-size: 25px;
   transition: font-size 0.3s; /* Add a transition effect for the font size */
@@ -88,8 +75,8 @@
   padding-top: 0.2vh;
 }
 
-.hero {
-  /* padding-top: -1vh; */
+.headerButton {
+  border: none;
 }
 
 /* Changes the CSS of components when the width of screen is < 1000px */
